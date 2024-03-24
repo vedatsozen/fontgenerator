@@ -3,22 +3,58 @@ body {
       margin: auto 0;
 }
 
-.fancytext {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+textarea {
+  margin: auto;
+  height:50px !important;
+  width:400px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
+#result {
+  margin: auto;
+  height: fit-content;
+  width:75%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap:5px;
+}
+
+.input-group {
+  width:25%;
+}
+
 
 .loadmore {
       display: block;
       background-color: forestgreen;
       color: white;
       margin: auto;
-      padding: 5px;
+      padding: 5px 10px;
       font-size: 16px;
-      border: none;
+      border: none !important;
       letter-spacing: 5px;
+      border-radius: 5px;
+}
+
+.loadmore:hover {
+background-color: green;
+transition: 400ms ease;
+}
+
+.loadmore:active {
+  border: none !important;
+  transform: translateY(5px);
+}
+
+a:hover {
+  color: transparent !important;
 }
 
 .fixed {
