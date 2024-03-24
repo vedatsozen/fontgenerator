@@ -57,6 +57,18 @@ a:hover {
   color: transparent !important;
 }
 
+.copybutton {
+  font-size: 13px !important;
+  letter-spacing: 2px;
+  background-color:lightgrey;
+}
+
+.copybutton:hover {
+  background-color: black;
+  color: white;
+  transition: 400ms ease;
+}
+
 .fixed {
  position: fixed;
  top:0; left:0;
@@ -70,6 +82,10 @@ a:hover {
 
  .bg-gradient-warning:hover{
      background-color:red;
+ }
+ 
+ .form-control {
+  margin: auto;
  }
  
  .form-control:disabled, .form-control[readonly] {

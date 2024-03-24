@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 <script>
      $(window).scroll(function(){
@@ -81,7 +82,6 @@
 </script>
 
     <textarea type="text" class="form-control fancytext" required="required" name="text" placeholder="Yazıyı buraya yaz ya da yapıştır .." value=""></textarea>
-    <br />
 
   <div id="result">
       
@@ -661,9 +661,13 @@
 
  <script>
 $(function(){
-var intv = setInterval(function(){ $(".copybutton").html('Kopyala'); }, 20);
+
+  var intv = setInterval(function() {
+    $(".copybutton").html('Kopyala');
+}, 20);
+
   $("body").on('click',".copybutton",function() { 
-$(".copybutton").html('Copy');
+    $(".copybutton").html('Kopyala');
 swal({
   title: "🔥Tebrikler🔥!",
   text: "Text başarıyla kopyalandı!",
