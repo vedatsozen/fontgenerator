@@ -1,10 +1,12 @@
 body {
-      padding:20px;
+    text-align: center;
+      padding:0px;
       margin: auto 0;
 }
 
 textarea {
-  margin: auto;
+  margin: auto !important ;
+  margin-top: 10px !important;
   height:50px !important;
   width:400px !important;
   display: flex;
@@ -15,9 +17,10 @@ textarea {
 
 #result {
   margin: auto;
+  margin-top: 10px;
   height: fit-content;
   width:75%;
-  padding: 10px;
+  padding:5px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -197,3 +200,48 @@ fill-opacity: 0.9;
       color: #444444;
     }
 
+@media only screen and (max-width:600px) {
+
+  body {
+    text-align: center;
+    padding:0px;
+    margin: auto 0;
+  }
+
+  textarea {
+    
+    margin: auto;
+    margin-top: 10px !important;
+    height:50px !important;
+    width:90% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #result {
+    margin: auto;
+    margin-top: 10px;
+    height: fit-content;
+    width:100%;
+    padding:5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+  }
+  
+  .input-group {
+    width:30%;
+  }
+
+  .copybutton {
+    font-size:2vw !important;
+    letter-spacing: 2px;
+    background-color:lightgrey;
+  }
+  
+}
